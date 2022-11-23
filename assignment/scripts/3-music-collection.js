@@ -87,56 +87,24 @@ console.log(" this is how much items is in the collection array", showCollection
 console.log(albums1.title);
 
 
-let noArtistFound = [];
+let artistFound = [];
 
 function findByArtist(artist) {
     for( let i = 0; i<collection.length; i++){
-        if( artist === collection[i]){
-            return collection[i].artist;  
+        if( artist === collection[i].artist){
+            artistFound.push(collection[i]); 
+           
         }
-        else{
-            console.log('No artist was found', noArtistFound);
-        }
-    }
-
+        
 }
-
+return artist;
+}
+console.log('Can we find this artist called 2Pac:', findByArtist('Jack'));
+console.log(artistFound);
 console.log('Can we find this artist called 2Pac:', findByArtist('2Pac'));
+console.log(artistFound);
+//console.log('Can we find this artist called Jack:', findByArtist('Jack'));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function showCollection (collection){
-    
-//     for (i=0 ; i<collection.length ; i++){
-//         console.log(collection[i].title + " by " + collection[i].artist + " published in " + collection[i].yearPublished)
-//     }//end for
-//     return collection.length;
-// }//end showCollection
-// console.log('this is how many items are in the array:', showCollection(collection) );
 
 // let Artist = []
 // function findByArtist(x){
@@ -147,5 +115,6 @@ console.log('Can we find this artist called 2Pac:', findByArtist('2Pac'));
 //     }//end for
 //     return x;
 // }//end findByArtist
-// console.log('finding if this artist is in array:', findByArtist('The Killers') )
+// console.log('finding if this artist is in array:', findByArtist('2Pac') )
 // console.log(Artist)
+
