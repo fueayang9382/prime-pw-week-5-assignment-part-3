@@ -118,3 +118,4 @@ console.log(artistFound);
 // console.log('finding if this artist is in array:', findByArtist('2Pac') )
 // console.log(Artist)
 
+//...
